@@ -17,6 +17,19 @@
 	limitations under the License.
 */
 
+/*
+    NOTE: 
+    A limitation is square bracket access or dot notation access will not work yet.
+    
+    In localStorage, you could do:
+        window.localStorage.foo = "bar" 
+            OR
+        window.localStorage["foo"] = "bar"
+        
+    It is technically possible if when you do a setItem("foo", "bar"), the object sets
+    the corresponding property this["foo"] = "bar" (TODO:)
+*/
+
 (function(){
 	
 	function localStorageFirebase() {
